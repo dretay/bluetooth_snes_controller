@@ -1,0 +1,914 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{a339797c-8c4d-4cfd-be8e-fb9566a7120e}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{df3117d3-7438-428d-823a-b30c15d5cf85}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{671ad0b9-5fe8-4590-b88a-07a276cf76bf}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{c5499147-f1c5-48be-8e16-090689b0834f}</UniqueIdentifier>
+      <Extensions>*.vgdbsettings</Extensions>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{c7743854-b810-4464-a2a9-4ad3a8a236a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{56e95d6b-76f3-42fd-a893-cf4c9bef74bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Peripherals">
+      <UniqueIdentifier>{636298f0-3640-4fa1-865e-7779c775665d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Peripherals">
+      <UniqueIdentifier>{45aedda2-8150-4b19-ab8f-53d97163de91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Utils">
+      <UniqueIdentifier>{2633319b-8b03-4db4-805a-74450fa9f62d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Utils">
+      <UniqueIdentifier>{6d76e82a-0c5c-4f08-9e48-8a2c0c269d39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Peer Manager">
+      <UniqueIdentifier>{bf9693e6-56ea-4996-94c4-7cad7d46d819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Peer Manager">
+      <UniqueIdentifier>{bd5585df-3d8e-447e-b858-77fbe4a2378b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Boards">
+      <UniqueIdentifier>{753d7d1d-1a89-44be-92e7-a40c70c6c546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Boards">
+      <UniqueIdentifier>{49f5e2e4-07a0-4992-a886-c8acb4be3c0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\Libraries">
+      <UniqueIdentifier>{2ef2ce9e-5081-45b9-8840-1150ad25f5cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\Libraries">
+      <UniqueIdentifier>{48e2a215-d9e2-484d-b53a-f2220dfb5baa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\BLE Common">
+      <UniqueIdentifier>{2ff52f3f-8750-43da-9b7e-50724799f477}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\BLE Common">
+      <UniqueIdentifier>{d567b7f0-ad2d-4710-a7b8-84814698aae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\BLE Connectable Advertising Support">
+      <UniqueIdentifier>{b40d258c-fb29-4578-95f7-2f58a61fdc41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\BLE Connectable Advertising Support">
+      <UniqueIdentifier>{e4e70b09-b111-4053-809f-fc45180d6cbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\BLE Battery Service">
+      <UniqueIdentifier>{70e3d5d8-fa1c-4057-8fb8-54c1ed410ee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\BLE Battery Service">
+      <UniqueIdentifier>{d29d8094-e472-4282-9df0-af79a2076e14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\BLE Device Information Service">
+      <UniqueIdentifier>{7b22d03e-3846-4d3e-a8de-3ed35e29b3fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\BLE Device Information Service">
+      <UniqueIdentifier>{103f3b4b-8536-4496-a672-5f00452d7f10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\BLE Human Interface Device Service">
+      <UniqueIdentifier>{59c8285d-d38a-41a3-81ce-2bf7422e3620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\BLE Human Interface Device Service">
+      <UniqueIdentifier>{6028384f-3eb8-4d92-9bde-e020ff363efe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sdk_config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\system_nrf51.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\system_nrf52.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\arm_common_tables.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\arm_const_structs.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\arm_math.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\cmsis_armcc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\cmsis_armcc_V6.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\cmsis_gcc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_cm0.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_cm0plus.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_cm3.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_cm4.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_cm7.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_cmFunc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_cmInstr.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_cmSimd.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_sc000.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_sc300.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\compiler_abstraction.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf51.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf51422_peripherals.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf51802_peripherals.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf51822_peripherals.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf51_bitfields.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf51_deprecated.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf51_to_nrf52.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf52.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf52832_peripherals.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf52_bitfields.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf52_name_change.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\softdevice\common\softdevice_handler\ant_stack_handler_types.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\softdevice\common\softdevice_handler\app_ram_base.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\softdevice\common\softdevice_handler\ble_stack_handler_types.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\softdevice\common\softdevice_handler\softdevice_handler.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\app_error.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\app_error_weak.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\app_util.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\app_util_bds.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\app_util_platform.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\common.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\nordic_common.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\nrf_assert.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\sdk_common.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\sdk_errors.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\sdk_macros.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\sdk_mapped_flags.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\sdk_os.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\sdk_resources.h">
+      <Filter>Header files\Device-specific files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\gatts_cache_manager.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\gatt_cache_manager.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\id_manager.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_data.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_database.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_data_storage.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_id.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_manager.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_manager_dox_config.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_manager_internal.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_manager_types.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\pm_buffer.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\pm_mutex.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\security_dispatcher.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\security_manager.h">
+      <Filter>Header files\Device-specific files\Peer Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\arduino_primo.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\boards.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\bsp.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\bsp_btn_ant.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\bsp_btn_ble.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\bsp_config_defines_dox_config.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\bsp_nfc.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\d52_starterkit.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\n5_starterkit.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\pca10028.h">
+      <Filter>Header files\Device-specific files\Boards</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\button\app_button.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\button\app_button_dox_config.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\crc16\crc16.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\crc16\crc16_dox_config.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\csense\nrf_csense.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\csense\nrf_csense_dox_config.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\csense\nrf_csense_macros.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\csense_drv\nrf_drv_csense.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\csense_drv\nrf_drv_csense_dox_config.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\experimental_section_vars\section_vars.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fds\fds.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fds\fds_dox_config.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fds\fds_internal_defs.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fifo\app_fifo.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fifo\app_fifo_dox_config.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fstorage\fstorage.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fstorage\fstorage_dox_config.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fstorage\fstorage_internal_defs.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\gpiote\app_gpiote.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\gpiote\app_gpiote_dox_config.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hardfault\hardfault.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hardfault\hardfault_default_dox_config.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_mem_pool.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_mem_pool_dox_config.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_slip.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_slip_dox_config.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_transport.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_transport_dox_config.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\ic_info\nrf_ic_info.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\pwm\app_pwm.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\pwm\app_pwm_dox_config.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\scheduler\app_scheduler.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\scheduler\app_scheduler_dox_config.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\sensorsim\sensorsim.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\sha256\sha256.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\timer\app_timer.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\timer\app_timer_appsh.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\timer\app_timer_dox_config.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\softdevice\common\softdevice_handler\softdevice_handler_appsh.h">
+      <Filter>Header files\Device-specific files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_advdata.h">
+      <Filter>Header files\Device-specific files\BLE Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_conn_params.h">
+      <Filter>Header files\Device-specific files\BLE Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_conn_state.h">
+      <Filter>Header files\Device-specific files\BLE Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_date_time.h">
+      <Filter>Header files\Device-specific files\BLE Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_gatt_db.h">
+      <Filter>Header files\Device-specific files\BLE Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_sensor_location.h">
+      <Filter>Header files\Device-specific files\BLE Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_srv_common.h">
+      <Filter>Header files\Device-specific files\BLE Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_advertising\ble_advertising.h">
+      <Filter>Header files\Device-specific files\BLE Connectable Advertising Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_advertising\ble_advertising_dox_config.h">
+      <Filter>Header files\Device-specific files\BLE Connectable Advertising Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_bas\ble_bas.h">
+      <Filter>Header files\Device-specific files\BLE Battery Service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_bas\ble_bas_dox_config.h">
+      <Filter>Header files\Device-specific files\BLE Battery Service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_dis\ble_dis.h">
+      <Filter>Header files\Device-specific files\BLE Device Information Service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_dis\ble_dis_dox_config.h">
+      <Filter>Header files\Device-specific files\BLE Device Information Service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_hids\ble_hids.h">
+      <Filter>Header files\Device-specific files\BLE Human Interface Device Service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_hids\ble_hids_dox_config.h">
+      <Filter>Header files\Device-specific files\BLE Human Interface Device Service</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_battery.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_ble_advertising.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_ble_buffer.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_ble_connection.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_ble_gap.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_ble_globals.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_ble_libs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_ble_peer_manager.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_ble_services.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_ble_util.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_keypad.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Program Files (x86)\SEGGER\JLink_V614b\Samples\RTT\SEGGER_RTT_V614b\RTT\SEGGER_RTT.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Program Files (x86)\SEGGER\JLink_V614b\Samples\RTT\SEGGER_RTT_V614b\RTT\SEGGER_RTT_Conf.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\adc\nrf_drv_adc.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\ble_flash\ble_flash.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\clock\nrf_drv_clock.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\common\nrf_drv_common.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\delay\nrf_delay.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\gpiote\nrf_drv_gpiote.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_adc.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_clock.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_ecb.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_egu.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_gpio.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_gpiote.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_nvmc.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_peripherals.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_ppi.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_qdec.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_rng.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_rtc.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_spi.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_spim.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_spis.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_temp.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_timer.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_twi.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_twim.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_twis.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_uart.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_uarte.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_wdt.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\nrf_soc_nosd\nrf_error.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\nrf_soc_nosd\nrf_nvic.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\nrf_soc_nosd\nrf_soc.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\ppi\nrf_drv_ppi.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\qdec\nrf_drv_qdec.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\rng\nrf_drv_rng.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\rtc\nrf_drv_rtc.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\sdio\sdio.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\swi\nrf_drv_swi.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\timer\nrf_drv_timer.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\twi_master\nrf_drv_twi.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\twi_master\deprecated\twi_master.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\uart\nrf_drv_uart.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\wdt\nrf_drv_wdt.h">
+      <Filter>Header files\Device-specific files\Peripherals</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\system_nrf51.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\softdevice\common\softdevice_handler\softdevice_handler.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\StartupFiles\startup_nRF51x.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\app_error.c">
+      <Filter>Source files\Device-specific files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\app_error_weak.c">
+      <Filter>Source files\Device-specific files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\app_util_platform.c">
+      <Filter>Source files\Device-specific files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\nrf_assert.c">
+      <Filter>Source files\Device-specific files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\sdk_mapped_flags.c">
+      <Filter>Source files\Device-specific files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\gatts_cache_manager.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\gatt_cache_manager.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\id_manager.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_data.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_database.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_data_storage.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_id.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_manager.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\pm_buffer.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\pm_mutex.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\security_dispatcher.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\security_manager.c">
+      <Filter>Source files\Device-specific files\Peer Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\bsp.c">
+      <Filter>Source files\Device-specific files\Boards</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\bsp_btn_ble.c">
+      <Filter>Source files\Device-specific files\Boards</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\bsp_nfc.c">
+      <Filter>Source files\Device-specific files\Boards</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\button\app_button.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\crc16\crc16.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\csense\nrf_csense.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\csense_drv\nrf_drv_csense.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fds\fds.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fifo\app_fifo.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fstorage\fstorage.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hardfault\hardfault_implementation.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_mem_pool.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_slip.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_transport.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\ic_info\nrf_ic_info.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\pwm\app_pwm.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\scheduler\app_scheduler.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\sensorsim\sensorsim.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\sha256\sha256.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\timer\app_timer.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\timer\app_timer_appsh.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\softdevice\common\softdevice_handler\softdevice_handler_appsh.c">
+      <Filter>Source files\Device-specific files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_advdata.c">
+      <Filter>Source files\Device-specific files\BLE Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_conn_params.c">
+      <Filter>Source files\Device-specific files\BLE Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_conn_state.c">
+      <Filter>Source files\Device-specific files\BLE Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_srv_common.c">
+      <Filter>Source files\Device-specific files\BLE Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_advertising\ble_advertising.c">
+      <Filter>Source files\Device-specific files\BLE Connectable Advertising Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_bas\ble_bas.c">
+      <Filter>Source files\Device-specific files\BLE Battery Service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_dis\ble_dis.c">
+      <Filter>Source files\Device-specific files\BLE Device Information Service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_hids\ble_hids.c">
+      <Filter>Source files\Device-specific files\BLE Human Interface Device Service</Filter>
+    </ClCompile>
+    <ClCompile Include="my_battery.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="my_ble_advertising.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="my_ble_buffer.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="my_ble_connection.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="my_ble_gap.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="my_ble_peer_manager.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="my_ble_services.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="my_ble_util.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="my_keypad.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Program Files (x86)\SEGGER\JLink_V614b\Samples\RTT\SEGGER_RTT_V614b\RTT\SEGGER_RTT.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Program Files (x86)\SEGGER\JLink_V614b\Samples\RTT\SEGGER_RTT_V614b\RTT\SEGGER_RTT_printf.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\adc\nrf_drv_adc.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\ble_flash\ble_flash.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\clock\nrf_drv_clock.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\common\nrf_drv_common.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\gpiote\nrf_drv_gpiote.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_adc.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_ecb.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_nvmc.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\nrf_soc_nosd\nrf_nvic.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\nrf_soc_nosd\nrf_soc.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\ppi\nrf_drv_ppi.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\qdec\nrf_drv_qdec.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\radio_config\radio_config.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\rng\nrf_drv_rng.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\rtc\nrf_drv_rtc.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\sdio\sdio.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\swi\nrf_drv_swi.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\timer\nrf_drv_timer.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\twi_master\nrf_drv_twi.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\uart\nrf_drv_uart.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\wdt\nrf_drv_wdt.c">
+      <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bluetooth_snes_controller-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="bluetooth_snes_controller-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="nrf5x.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="nrf5x.xml">
+      <Filter>VisualGDB settings</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

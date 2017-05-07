@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AD9B0AC7-92E5-4666-BF89-2C257C0CE5BE}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)nrf5x.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)nrf5x.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <Toolchain>d:\SysGCC\arm-eabi</Toolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <Toolchain>d:\SysGCC\arm-eabi</Toolchain>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:/Program Files (x86)/SEGGER/JLink_V614b/Samples/RTT/SEGGER_RTT_V614b/RTT;C:/Users/drew/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nordic.nrf5x/nRF5x/external/segger_rtt;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <LinkerScript />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_advertising\ble_advertising.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_advertising\ble_advertising_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_bas\ble_bas.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_bas\ble_bas_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_dis\ble_dis.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_dis\ble_dis_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_hids\ble_hids.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_hids\ble_hids_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_advdata.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_conn_params.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_conn_state.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_date_time.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_gatt_db.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_sensor_location.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_srv_common.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\gatts_cache_manager.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\gatt_cache_manager.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\id_manager.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_data.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_database.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_data_storage.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_id.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_manager.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_manager_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_manager_internal.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_manager_types.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\pm_buffer.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\pm_mutex.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\security_dispatcher.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\security_manager.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\compiler_abstraction.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf51.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf51422_peripherals.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf51802_peripherals.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf51822_peripherals.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf51_bitfields.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf51_deprecated.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf51_to_nrf52.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf52.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf52832_peripherals.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf52_bitfields.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\device\nrf52_name_change.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\adc\nrf_drv_adc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\ble_flash\ble_flash.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\clock\nrf_drv_clock.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\common\nrf_drv_common.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\delay\nrf_delay.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\gpiote\nrf_drv_gpiote.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_adc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_clock.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_ecb.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_egu.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_gpio.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_gpiote.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_nvmc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_peripherals.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_ppi.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_qdec.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_rng.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_rtc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_spi.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_spim.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_spis.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_temp.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_timer.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_twi.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_twim.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_twis.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_uart.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_uarte.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_wdt.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\nrf_soc_nosd\nrf_error.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\nrf_soc_nosd\nrf_nvic.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\nrf_soc_nosd\nrf_soc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\ppi\nrf_drv_ppi.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\qdec\nrf_drv_qdec.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\rng\nrf_drv_rng.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\rtc\nrf_drv_rtc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\sdio\sdio.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\swi\nrf_drv_swi.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\timer\nrf_drv_timer.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\twi_master\deprecated\twi_master.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\twi_master\nrf_drv_twi.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\uart\nrf_drv_uart.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\wdt\nrf_drv_wdt.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\button\app_button.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\button\app_button_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\crc16\crc16.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\crc16\crc16_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\csense\nrf_csense.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\csense\nrf_csense_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\csense\nrf_csense_macros.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\csense_drv\nrf_drv_csense.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\csense_drv\nrf_drv_csense_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\experimental_section_vars\section_vars.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fds\fds.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fds\fds_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fds\fds_internal_defs.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fifo\app_fifo.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fifo\app_fifo_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fstorage\fstorage.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fstorage\fstorage_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fstorage\fstorage_internal_defs.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\gpiote\app_gpiote.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\gpiote\app_gpiote_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hardfault\hardfault.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hardfault\hardfault_default_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_mem_pool.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_mem_pool_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_slip.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_slip_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_transport.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_transport_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\ic_info\nrf_ic_info.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\pwm\app_pwm.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\pwm\app_pwm_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\scheduler\app_scheduler.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\scheduler\app_scheduler_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\sensorsim\sensorsim.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\sha256\sha256.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\timer\app_timer.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\timer\app_timer_appsh.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\timer\app_timer_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\app_error.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\app_error_weak.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\app_util.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\app_util_bds.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\app_util_platform.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\common.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\nordic_common.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\nrf_assert.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\sdk_common.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\sdk_errors.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\sdk_macros.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\sdk_mapped_flags.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\sdk_os.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\sdk_resources.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\softdevice\common\softdevice_handler\ant_stack_handler_types.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\softdevice\common\softdevice_handler\app_ram_base.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\softdevice\common\softdevice_handler\ble_stack_handler_types.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\softdevice\common\softdevice_handler\softdevice_handler.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\softdevice\common\softdevice_handler\softdevice_handler_appsh.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\arm_common_tables.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\arm_const_structs.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\arm_math.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\cmsis_armcc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\cmsis_armcc_V6.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\cmsis_gcc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_cm0.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_cm0plus.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_cm3.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_cm4.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_cm7.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_cmFunc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_cmInstr.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_cmSimd.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_sc000.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\cmsis\include\core_sc300.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\system_nrf51.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\system_nrf52.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\arduino_primo.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\boards.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\bsp.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\bsp_btn_ant.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\bsp_btn_ble.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\bsp_config_defines_dox_config.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\bsp_nfc.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\d52_starterkit.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\n5_starterkit.h" />
+    <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\pca10028.h" />
+    <ClInclude Include="D:\Program Files (x86)\SEGGER\JLink_V614b\Samples\RTT\SEGGER_RTT_V614b\RTT\SEGGER_RTT.h" />
+    <ClInclude Include="D:\Program Files (x86)\SEGGER\JLink_V614b\Samples\RTT\SEGGER_RTT_V614b\RTT\SEGGER_RTT_Conf.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="my_battery.h" />
+    <ClInclude Include="my_ble_advertising.h" />
+    <ClInclude Include="my_ble_buffer.h" />
+    <ClInclude Include="my_ble_connection.h" />
+    <ClInclude Include="my_ble_gap.h" />
+    <ClInclude Include="my_ble_globals.h" />
+    <ClInclude Include="my_ble_libs.h" />
+    <ClInclude Include="my_ble_peer_manager.h" />
+    <ClInclude Include="my_ble_services.h" />
+    <ClInclude Include="my_ble_util.h" />
+    <ClInclude Include="my_keypad.h" />
+    <ClInclude Include="sdk_config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_advertising\ble_advertising.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_bas\ble_bas.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_dis\ble_dis.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\ble_services\ble_hids\ble_hids.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_advdata.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_conn_params.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_conn_state.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\common\ble_srv_common.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\gatts_cache_manager.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\gatt_cache_manager.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\id_manager.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_data.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_database.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_data_storage.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_id.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\peer_manager.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\pm_buffer.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\pm_mutex.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\security_dispatcher.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\ble\peer_manager\security_manager.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\adc\nrf_drv_adc.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\ble_flash\ble_flash.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\clock\nrf_drv_clock.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\common\nrf_drv_common.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\gpiote\nrf_drv_gpiote.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_adc.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_ecb.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\hal\nrf_nvmc.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\nrf_soc_nosd\nrf_nvic.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\nrf_soc_nosd\nrf_soc.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\ppi\nrf_drv_ppi.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\qdec\nrf_drv_qdec.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\radio_config\radio_config.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\rng\nrf_drv_rng.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\rtc\nrf_drv_rtc.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\sdio\sdio.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\swi\nrf_drv_swi.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\timer\nrf_drv_timer.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\twi_master\nrf_drv_twi.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\uart\nrf_drv_uart.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\wdt\nrf_drv_wdt.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\button\app_button.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\crc16\crc16.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\csense\nrf_csense.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\csense_drv\nrf_drv_csense.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fds\fds.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fifo\app_fifo.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\fstorage\fstorage.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hardfault\hardfault_implementation.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_mem_pool.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_slip.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\hci\hci_transport.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\ic_info\nrf_ic_info.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\pwm\app_pwm.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\scheduler\app_scheduler.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\sensorsim\sensorsim.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\sha256\sha256.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\timer\app_timer.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\timer\app_timer_appsh.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\app_error.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\app_error_weak.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\app_util_platform.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\nrf_assert.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\libraries\util\sdk_mapped_flags.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\softdevice\common\softdevice_handler\softdevice_handler.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\softdevice\common\softdevice_handler\softdevice_handler_appsh.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\toolchain\system_nrf51.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\bsp.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\bsp_btn_ble.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\examples\bsp\bsp_nfc.c" />
+    <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\StartupFiles\startup_nRF51x.c" />
+    <ClCompile Include="D:\Program Files (x86)\SEGGER\JLink_V614b\Samples\RTT\SEGGER_RTT_V614b\RTT\SEGGER_RTT.c" />
+    <ClCompile Include="D:\Program Files (x86)\SEGGER\JLink_V614b\Samples\RTT\SEGGER_RTT_V614b\RTT\SEGGER_RTT_printf.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="my_battery.c" />
+    <ClCompile Include="my_ble_advertising.c" />
+    <ClCompile Include="my_ble_buffer.c" />
+    <ClCompile Include="my_ble_connection.c" />
+    <ClCompile Include="my_ble_gap.c" />
+    <ClCompile Include="my_ble_peer_manager.c" />
+    <ClCompile Include="my_ble_services.c" />
+    <ClCompile Include="my_ble_util.c" />
+    <ClCompile Include="my_keypad.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bluetooth_snes_controller-Debug.vgdbsettings" />
+    <None Include="bluetooth_snes_controller-Release.vgdbsettings" />
+    <None Include="nrf5x.props" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="nrf5x.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
