@@ -643,6 +643,9 @@
     <ClInclude Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\wdt\nrf_drv_wdt.h">
       <Filter>Header files\Device-specific files\Peripherals</Filter>
     </ClInclude>
+    <ClInclude Include="my_timers.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -893,6 +896,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.nordic.nrf5x-legacy\nRF5x\components\drivers_nrf\wdt\nrf_drv_wdt.c">
       <Filter>Source files\Device-specific files\Peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="my_timers.c">
+      <Filter>Source files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

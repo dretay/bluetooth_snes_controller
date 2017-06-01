@@ -61,16 +61,30 @@ static void uart_event_handler(nrf_drv_uart_event_t * p_event, void* p_context) 
 	}
 }
 
+void in_pin_handler(nrf_drv_gpiote_pin_t pin, nrf_gpiote_polarity_t action){
+	//reset the shutdown timer	
+	reset_shutdown_timer();
 
+}
 void keypad_receiver_init(void) {
 	uint32_t err_code;
 
 	nrf_drv_uart_config_t config = NRF_DRV_UART_DEFAULT_CONFIG;
 	config.baudrate = NRF_UART_BAUDRATE_4800;
-	config.pselrxd = 9;
+	config.pselrxd = 9;	
 	err_code = nrf_drv_uart_init(&uart_driver_instance, &config, uart_event_handler);
 	nrf_drv_uart_rx_enable(&uart_driver_instance);
 	nrf_drv_uart_rx(&uart_driver_instance, rx_buffer, 2);
+
+	//Initialize gpiote module
+	err_code = nrf_drv_gpiote_init();
+	APP_ERROR_CHECK(err_code);
+	//Configure sense input pin to enable wakeup and interrupt on button press.
+	nrf_drv_gpiote_in_config_t in_config = GPIOTE_CONFIG_IN_SENSE_LOTOHI(false);    
+	err_code = nrf_drv_gpiote_in_init(10, &in_config, in_pin_handler); 
+	APP_ERROR_CHECK(err_code);                                         
+	nrf_drv_gpiote_in_event_enable(10, true);  
+
 
 }
 bool i2c_tx(void *i2c_instance, uint8_t i2c_address, uint8_t *message, uint8_t size) {

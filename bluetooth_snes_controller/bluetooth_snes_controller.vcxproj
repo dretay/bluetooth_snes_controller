@@ -231,6 +231,7 @@
     <ClInclude Include="my_ble_services.h" />
     <ClInclude Include="my_ble_util.h" />
     <ClInclude Include="my_keypad.h" />
+    <ClInclude Include="my_timers.h" />
     <ClInclude Include="sdk_config.h" />
   </ItemGroup>
   <ItemGroup>
@@ -317,6 +318,7 @@
     <ClCompile Include="my_ble_services.c" />
     <ClCompile Include="my_ble_util.c" />
     <ClCompile Include="my_keypad.c" />
+    <ClCompile Include="my_timers.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bluetooth_snes_controller-Debug.vgdbsettings" />

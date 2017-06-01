@@ -13,21 +13,21 @@ static void adc_event_handler(nrf_drv_adc_evt_t const * p_event) {
 	sd_clock_hfclk_release();			//Release the external crystal
 	
 	adc_event_counter++;
-	LOG("    ADC event counter: %d\r\n", adc_event_counter);
+//	LOG("    ADC event counter: %d\r\n", adc_event_counter);
 	if (p_event->type == NRF_DRV_ADC_EVT_DONE) {
 		uint32_t i;
 		for (i = 0; i < p_event->data.done.size; i++) {
-			LOG("Sample value %d: %d\r\n", i + 1, p_event->data.done.p_buffer[i]);
+//			LOG("Sample value %d: %d\r\n", i + 1, p_event->data.done.p_buffer[i]);
 			adc_sum_value += p_event->data.done.p_buffer[i];                           //Sum all values in ADC buffer
 		}
 		adc_average_value = adc_sum_value / p_event->data.done.size;                   //Calculate average value from all samples in the ADC buffer
-		LOG("Average ADC value: %d\r\n", adc_average_value);
+//		LOG("Average ADC value: %d\r\n", adc_average_value);
 				
 		adc_result_millivolts = ADC_RESULT_IN_MILLI_VOLTS(adc_average_value);          //Transform the average ADC value into millivolts value
-		LOG("ADC result in millivolts: %d\r\n", adc_result_millivolts);
+//		LOG("ADC result in millivolts: %d\r\n", adc_result_millivolts);
 				
 		adc_result_percent = battery_level_in_percent(adc_result_millivolts);          //Transform the millivolts value into battery level percent.
-		LOG("ADC result in percent: %d\r\n", adc_result_percent);
+		LOG("Battery level: %d\r\n", adc_result_percent);
 				
         //Send the battery level over BLE
 		err_code = ble_bas_battery_level_update(&m_bas, adc_result_percent);           //Send the battery level over BLE
@@ -70,13 +70,13 @@ void adc_sample(void) {
 	
 	for (uint32_t i = 0; i < ADC_BUFFER_SIZE; i++) {
 		while ((NRF_ADC->BUSY & ADC_BUSY_BUSY_Msk) == ADC_BUSY_BUSY_Busy) {}   //Wait until the ADC is finished sampling
-		LOG("Start sampling ... \r\n");
+//		LOG("Start sampling ... \r\n");
 		nrf_drv_adc_sample();        // Trigger ADC conversion
 	}					
 }
 
 void battery_level_update(void)
 {
-	LOG("\r\n    Triggering battery level update...\r\n");
+//	LOG("\r\n    Triggering battery level update...\r\n");
 	app_sched_event_put(0, 0, (app_sched_event_handler_t)adc_sample);
 }
