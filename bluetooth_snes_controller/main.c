@@ -41,7 +41,7 @@ int main(void)
 	timers_init();
 	ble_stack_init();
 	scheduler_init();
-	peer_manager_init(true);	
+	peer_manager_init(false);	
 	gap_params_init();
 	advertising_init();
 	services_init();
@@ -58,6 +58,6 @@ int main(void)
 	// Enter main loop.
 	for (;;){
 		app_sched_execute();
-		//power_manage();
+		power_manage();
 	}
 }

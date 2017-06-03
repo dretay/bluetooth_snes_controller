@@ -11,7 +11,10 @@
   </Project>
   <Build xsi:type="com.visualgdb.build.msbuild">
     <ProjectFile>bluetooth_snes_controller.vcxproj</ProjectFile>
-    <ParallelJobCount>0</ParallelJobCount>
+    <RemoteBuildEnvironment>
+      <Records />
+    </RemoteBuildEnvironment>
+    <ParallelJobCount>1</ParallelJobCount>
   </Build>
   <Debug xsi:type="com.visualgdb.debug.embedded">
     <AdditionalStartupCommands />
@@ -128,6 +131,7 @@
     <ShowMessageAfterExecuting>true</ShowMessageAfterExecuting>
   </CustomShortcuts>
   <UserDefinedVariables />
+  <ImportedPropertySheets />
   <CodeSense>
     <Enabled>Unknown</Enabled>
     <ExtraSettings>

@@ -8,9 +8,13 @@ void battery_level_meas_timeout_handler(void * p_context) {
 }
 
 void shutdown_timeout_handler(void * p_context) {
+	uint32_t err_code;
 	UNUSED_PARAMETER(p_context);
 	LOG("SHUTTING DOWN!");
-	NRF_POWER->SYSTEMOFF = 1;
+	
+	//err_code = app_timer_stop(m_shutdown_timer_id);
+	//APP_ERROR_CHECK(err_code);
+	sd_power_system_off();
 }
 
 //timer init

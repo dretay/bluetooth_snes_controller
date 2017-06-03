@@ -80,7 +80,7 @@ void keypad_receiver_init(void) {
 	err_code = nrf_drv_gpiote_init();
 	APP_ERROR_CHECK(err_code);
 	//Configure sense input pin to enable wakeup and interrupt on button press.
-	nrf_drv_gpiote_in_config_t in_config = GPIOTE_CONFIG_IN_SENSE_LOTOHI(false);    
+	nrf_drv_gpiote_in_config_t in_config = GPIOTE_CONFIG_IN_SENSE_TOGGLE(false);    
 	err_code = nrf_drv_gpiote_in_init(10, &in_config, in_pin_handler); 
 	APP_ERROR_CHECK(err_code);                                         
 	nrf_drv_gpiote_in_event_enable(10, true);  
