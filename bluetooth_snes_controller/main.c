@@ -13,28 +13,41 @@
 #define NRF_BLE_MAX_MTU_SIZE            GATT_MTU_SIZE_DEFAULT                       /**< MTU size used in the softdevice enabling and to reply to a BLE_GATTS_EVT_EXCHANGE_MTU_REQUEST event. */
 #endif
 
-#define SCHED_MAX_EVENT_DATA_SIZE        MAX(APP_TIMER_SCHED_EVT_SIZE, BLE_STACK_HANDLER_SCHED_EVT_SIZE)       /**< Maximum size of scheduler events. */
-#define SCHED_QUEUE_SIZE                 10                                          /**< Maximum number of events in the scheduler queue. */
+/// <summary>
+/// Maximum size of scheduler events.
+/// </summary>
+#define SCHED_MAX_EVENT_DATA_SIZE MAX(APP_TIMER_SCHED_EVT_SIZE, BLE_STACK_HANDLER_SCHED_EVT_SIZE)
+
+/// <summary>
+///  Maximum number of events in the scheduler queue.
+/// </summary>
+#define SCHED_QUEUE_SIZE 10
 
 STATIC_ASSERT(sizeof(buffer_entry_t) % 4 == 0);
 
 
-//Callback function for asserts in the SoftDevice.
+/// <summary>
+/// callback for asserts in the softdevice
+/// </summary>
+/// <param name="line_num">line number of fault</param>
+/// <param name="p_file_name">file name of fault</param>
 void assert_nrf_callback(uint16_t line_num, const uint8_t * p_file_name) {
 	LOG("SoftDevice assert! %d, %s", line_num, p_file_name);
 }
 
 
-/**@brief Function for the Event Scheduler initialization.
- */
+/// <summary>
+/// initializes the task scheduler 
+/// </summary>
 static void scheduler_init(void) {
 	APP_SCHED_INIT(SCHED_MAX_EVENT_DATA_SIZE, SCHED_QUEUE_SIZE);
 }
 
-
-int main(void)
-{
-	bool     erase_bonds;
+/// <summary>
+/// main application loop
+/// </summary>
+/// <returns>should never return</returns>
+int main(void){
 	uint32_t err_code;
 
 	// Initialize.

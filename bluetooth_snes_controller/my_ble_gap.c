@@ -1,10 +1,6 @@
 #include "my_ble_gap.h"
 
-/**@brief Function for the GAP initialization.
- *
- * @details This function sets up all the necessary GAP (Generic Access Profile) parameters of the
- *          device including the device name, appearance, and the preferred connection parameters.
- */
+
 void gap_params_init(void){
 	uint32_t                err_code;
 	ble_gap_conn_params_t   gap_conn_params;

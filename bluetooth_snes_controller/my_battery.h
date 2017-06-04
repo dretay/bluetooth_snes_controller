@@ -12,6 +12,17 @@ static nrf_drv_adc_channel_t m_channel_config = NRF_DRV_ADC_DEFAULT_CHANNEL(NRF_
 #define ADC_RESULT_IN_MILLI_VOLTS(ADC_VALUE)\
 				((((ADC_VALUE) * ADC_REF_VOLTAGE_IN_MILLIVOLTS) / 1023) * ADC_PRE_SCALING_COMPENSATION)																	 
 
+/// <summary>
+/// performs a battery measurement and updates the battery level characteristic in the battery service 
+/// </summary>
 void adc_sample(void);
+
+/// /// <summary>
+/// initializes the adc for voltage sensing
+/// </summary>
 void battery_sensor_init(void);
+
+/// <summary>
+/// schedule a battery level update - intended to be called from an irq (timer)
+/// </summary>
 void battery_level_update(void);
