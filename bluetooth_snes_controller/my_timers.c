@@ -1,7 +1,6 @@
 #include "my_timers.h"
 
 
-//called each time battery timeout expires
 void battery_level_meas_timeout_handler(void * p_context) {
 	UNUSED_PARAMETER(p_context);
 	battery_level_update();
@@ -12,12 +11,9 @@ void shutdown_timeout_handler(void * p_context) {
 	UNUSED_PARAMETER(p_context);
 	LOG("SHUTTING DOWN!");
 	
-	//err_code = app_timer_stop(m_shutdown_timer_id);
-	//APP_ERROR_CHECK(err_code);
-	sd_power_system_off();
+	sleep_mode_enter();
 }
 
-//timer init
 void timers_init(void) {
 	uint32_t err_code;
 
@@ -33,11 +29,6 @@ void timers_init(void) {
 	APP_ERROR_CHECK(err_code);
 }
 
-
-
-
-/**@brief Function for starting timers.
- */
 void timers_start(void) {
 	uint32_t err_code;
 

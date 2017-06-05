@@ -15,6 +15,12 @@
 #define BITMASK_FLIP(x,y) ((x) ^= (y))
 #define BITMASK_CHECK(x,y) (((x) & (y)) == (y))
 
-
+/// <summary>
+/// put system to sleep mode
+/// </summary>
 void sleep_mode_enter(void);
+
+/// <summary>
+/// function for power manager
+/// </summary>
 void power_manage(void);

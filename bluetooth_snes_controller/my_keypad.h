@@ -22,5 +22,14 @@ uint16_t keypad_state;
 extern nrf_drv_uart_t uart_driver_instance;
 static uint8_t rx_buffer[2];
 	
-void buttons_init(void);
+/// <summary>
+/// initializes attached keypad 
+/// </summary>
 void keypad_receiver_init(void);
+
+/// <summary>
+/// handler for receiving a uart msg
+/// </summary>
+/// <param name="p_event">uart event structure</param>
+/// <param name="p_context">initialization context</param>
+static void uart_event_handler(nrf_drv_uart_event_t * p_event, void* p_context);

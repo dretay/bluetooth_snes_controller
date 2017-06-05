@@ -1,6 +1,13 @@
 ﻿#include "my_keypad.h"
 
+/// <summary>
+/// uart instance to associate with keypad
+/// </summary>
 nrf_drv_uart_t uart_driver_instance = NRF_DRV_UART_INSTANCE(UART0_INSTANCE_INDEX);
+
+/// <summary>
+/// dictionary of kepyad index to label (used for debug printing)
+/// </summary>
 keypad_button_t keypad_buttons[] = {
 	{ 0,  "1" },
 	{ 1,  "2" },
@@ -47,13 +54,11 @@ static void uart_event_handler(nrf_drv_uart_event_t * p_event, void* p_context) 
 		break;
 
 	case NRF_DRV_UART_EVT_ERROR:	
-		LOG("NRF_DRV_UART_EVT_ERROR");
-	
+		LOG("NRF_DRV_UART_EVT_ERROR");	
 		break;
 
 	case NRF_DRV_UART_EVT_TX_DONE:	    
 		LOG("NRF_DRV_UART_EVT_TX_DONE");
-
 		break;
 
 	default:
@@ -85,8 +90,5 @@ void keypad_receiver_init(void) {
 	APP_ERROR_CHECK(err_code);                                         
 	nrf_drv_gpiote_in_event_enable(10, true);  
 
-
-}
-bool i2c_tx(void *i2c_instance, uint8_t i2c_address, uint8_t *message, uint8_t size) {
 
 }
