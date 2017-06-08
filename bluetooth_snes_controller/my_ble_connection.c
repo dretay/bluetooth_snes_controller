@@ -43,7 +43,7 @@ static void on_ble_evt(ble_evt_t * p_ble_evt) {
 			break;
 
 		case BLE_EVT_TX_COMPLETE:
-			LOG("BLE_EVT_TX_COMPLETE\r\n")
+			LOG("BLE_EVT_TX_COMPLETE\r\n");
 			// can send next key press
 			(void) buffer_dequeue(true);
 			break; 
@@ -84,13 +84,13 @@ static void on_ble_evt(ble_evt_t * p_ble_evt) {
 			break; 
 
 		case BLE_EVT_USER_MEM_REQUEST:
-			LOG("BLE_EVT_USER_MEM_REQUEST\r\n")
+			LOG("BLE_EVT_USER_MEM_REQUEST\r\n");
 			err_code = sd_ble_user_mem_reply(m_conn_handle, NULL);
 			APP_ERROR_CHECK(err_code);
 			break;
 
 		case BLE_GATTS_EVT_RW_AUTHORIZE_REQUEST: {
-			LOG("BLE_GATTS_EVT_RW_AUTHORIZE_REQUEST\r\n")
+			LOG("BLE_GATTS_EVT_RW_AUTHORIZE_REQUEST\r\n");
 			ble_gatts_evt_rw_authorize_request_t  req;
 			ble_gatts_rw_authorize_reply_params_t auth_reply;
 
